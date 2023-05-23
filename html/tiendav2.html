@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda de Personajes</title>
+  <link rel="stylesheet" href="../css/tienda.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+  <header class="header-tienda">
+    <div class="logo">
+      <img src="../img/Logo.png" class="logo" alt="Logo">
+    </div>
+    <div class="Dinero"><p> Saldo: <span id="saldo">100€</span></p></div>
+      <h1 class="titulo">Compra las tortugas</h1>
+    <nav>
+      <ul>
+        <li><a href="../html/menuprincipal.html">Inicio</a></li>
+        <li><a href="../html/personajes.html">Personajes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="characters">
+      <div class="character">
+        <img src="../img/splinter.gif" alt="Personaje 1" class="splinter-img">
+        <div class="splinter">
+          <h3 class="h3-splinter-personajes">Splinter</h3>
+          <p class="p-splinter">5€</p>
+          <button class="buy-button1" data-price="5" data-name="Splinter" onclick="cambiarprecio(event)" id="Splinter">Comprar</button>
+        </div>
+      </div>
+      <div class="character">
+        <img src="../img/leo.gif" alt="Personaje 2" class="leo-img">
+        <h3 class="h3-leo-personajes">Leonardo</h3>
+        <p class="p-leo">10€</p>
+        <button class="buy-button2" data-price="10" data-name="Leonardo" onclick="cambiarprecio(event)" id="Leonardo">Comprar</button>
+      </div>
+      <div class="character">
+        <img src="../img/rafa.gif" alt="Personaje 3" class="rafaelo-img"> 
+        <div class="rafael">
+          <h3>Raphael</h3>
+          <p>20€</p>
+          <button class="buy-button3" data-price="20" data-name="Raphael" onclick="cambiarprecio(event)" id="Raphael">Comprar</button>
+        </div>
+      </div>
+      <div class="character">
+        <img src="../img/miguel.gif" alt="Personaje 3" class="michelangelo-img">
+        <div class="michelangelo">
+          <h3>Michelangelo</h3>
+          <p>30€</p>
+          <button class="buy-button4" data-price="20.00" data-name="Michelangelo" onclick="cambiarprecio(event)" id="Michelangelo">Comprar</button>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <script src="../js/carritov2.js"></script>
+</body>
+</html>
