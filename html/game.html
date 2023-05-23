@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="pageTitle">Rana saltarina</title>
+    <script src="../js/toggleMenu.js"></script>
+    <script src="../js/attributes.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/gameScene.js"></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="app app-default-container background-container">
+        <div id="foregroundContainer" class="foregroundContainer" style="background-color: #000000FF">
+
+        </div>
+        <div class="shadowContainer">
+            
+        </div>
+        <div class="elementsContainer borderShadow" id="elementsContainer">
+            <img src="../img/dona.gif" class="rana character position-absolute z-index-2" id="mainCharacter">
+        </div>
+        <div id="levelInfoContainer" class="levelInfoContainer">
+            <h1 id="levelInfoName" style="filter:opacity(0%)"></h1>
+        </div>
+        <div id="pauseMenu" class="pauseMenu full-size-menu hidden-menu">
+            <div id="pauseMenuContainer" class="pauseMenuContainer default-menu-container vertical-menu">
+                <a class="highlighted-button">Continue</a>
+                <button class="highlighted-button">Settings</button>
+                <button class="highlighted-button">Characters</button>
+                <button class="highlighted-button">c</button>
+                <a class="highlighted-button" href="./mainmenu.html">Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

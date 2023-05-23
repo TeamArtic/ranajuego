@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus personajes</title>
+  <title></title>
+  <link rel="stylesheet" href="../css/tienda.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+    <header class="header-personajes">
+      <img src="../img/Logo.png" class="foto-personajes" alt="Logo-personajes">
+      <h1>Tus Personajes</h1>
+  
+      <nav>
+        <ul class="navul-personajes">
+          <li class="navli-pesonajes"><a class="lia-personajes" href="../html/mainmenu.html">Inicio</a></li>
+          <li><a class="lia-personajes" href="../html/shop.html">Tienda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-personajes">
+      <section class="characters-personajes">
+        <div class="character-personajes">
+          <img src="../img/yellow.gif" alt="Personaje 1" class="splinter-img-personajes">
+          <div class="splinter-personajes">
+            <h3 class="h3-splinter-personajes">Jennika</h3>
+            <button class="buy-button1-personajes" data-price="5" data-name="Splinter"  onclick="cambiarprecio(event); mostrarMensaje();" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="character-personajes">
+          <img src="../img/leo.gif" alt="Personaje 2" class="leo-img-personajes">
+          <div class="leo-personajes">
+            <h3 class="h3-leonardo-personajes">Leonardo</h3>
+            <button class="buy-button2-personajes" data-price="10" data-name="Leonardo"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Leonardo">
+              Seleccionar 
+            </button>
+          </div>
+        </div>
+
+      
+        <div class="character-personajes">
+          <img src="../img/rafa.gif" alt="Personaje 3" class="rafaelo-img-personajes">
+          <div class="rafael-personajes">
+            <h3>Raphael</h3>
+            <button class="buy-button3-personajes" data-price="20" data-name="Raphael"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Raphael">Seleccionar</button>
+          </div>
+        </div>
+
+
+        <div class="character-personajes">
+          <img src="../img/miguel.gif" alt="Personaje 3" class="michelangelo-img-personajes">
+          <div class="michelangelo-personajes">
+            <h3>Michelangelo</h3>
+            <button class="buy-button4-personajes" data-price="20" data-name="Michelangelo"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Michelangelo">Seleccionar</button>
+          </div>
+        </div>
+
+
+
+        <div class="character-personajes">
+          <img src="../img/dona.gif" alt="Personaje 4" class="dona-img-personajes">
+          <div class="dona-personajes">
+            <h3 class="h3-dona-personajes">Donatello</h3>
+            <button class="buy-button5-personajes" data-price="10" data-name="Donatello"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Leonardo">
+              Seleccionar 
+            </button>
+          </div>
+        </div>
+        
+    </main>
+    <div id="mensaje"></div>
+  <script src="../js/personaje.js"></script>
+  <img id="other-characters-button" class="hidden" src="../img/boton cancelar.png" onclick="location.reload()" style="cursor: pointer;">
+</body>
+</html>

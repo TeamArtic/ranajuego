@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus personajes</title>
+  <title></title>
+  <link rel="stylesheet" href="../css/tienda.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="../js/characters.js"></script>
+</head>
+<body>
+  <div id="app" class="app app-menu-container store-background">
+    <header class="characters-header display-flex gap-20-px">
+      <div class="flex-1">
+        <img class="left-elemen-margin-10-px" src="../img/Logo.png">
+      </div>
+      <h1 class="flex-2 text-align-center">Personajes</h1>
+      <nav class="flex-1">
+        <ul class="right-element-margin-20-px display-flex list-style-none gap-20-px justify-content-end">
+          <li><a href="../html/mainmenu.html">Inicio</a></li>
+          <li><a href="../html/shop.html">Tienda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="overflow-auto">
+      <section class="defalut-menu-grid">
+        <div class="default-menu-container default-character-card">
+          <div class="centered-element flex-1">
+            <img class="image-rendering-pixelated" style="width: 200px" src="../img/yellowshop.gif">
+          </div>
+          <div class="vertical-container">
+            <h3 class="text-align-center">Jennika</h3>
+            <button class="highlighted-button" data-price="5" data-name="Splinter"
+            onclick="setCharacter(0)" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+        <div class="default-menu-container default-character-card">
+          <div class="centered-element flex-1">
+            <img class="image-rendering-pixelated" style="width: 200px" src="../img/leoshop.gif">
+          </div>
+          <div class="vertical-container">
+            <h3 class="text-align-center">Leo</h3>
+            <button class="highlighted-button" data-price="5" data-name="Splinter"
+            onclick="setCharacter(1)" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+        <div class="default-menu-container default-character-card">
+          <div class="centered-element flex-1">
+            <img class="image-rendering-pixelated" style="width: 200px" src="../img/rafashop.gif">
+          </div>
+          <div class="vertical-container">
+            <h3 class="text-align-center">Rafael</h3>
+            <button class="highlighted-button" data-price="5" data-name="Splinter"
+            onclick="setCharacter(2)" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+        <div class="default-menu-container default-character-card">
+          <div class="centered-element flex-1">
+            <img class="image-rendering-pixelated" style="width: 200px" src="../img/miguelshop.gif">
+          </div>
+          <div class="vertical-container">
+            <h3 class="text-align-center">Michelangelo</h3>
+            <button class="highlighted-button" data-price="5" data-name="Splinter"
+            onclick="setCharacter(3)" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+        <div class="default-menu-container default-character-card">
+          <div class="centered-element flex-1">
+            <img class="image-rendering-pixelated" style="width: 200px" src="../img/donashop.gif">
+          </div>
+          <div class="vertical-container">
+            <h3 class="text-align-center">Donnatelo</h3>
+            <button class="highlighted-button" data-price="5" data-name="Splinter"
+              onclick="setCharacter(4)" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+    </main>
+
+  </div>
+  <script src="../js/characters.js"></script> 
+</body>
+</html>

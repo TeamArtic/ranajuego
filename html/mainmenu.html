@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+       
+    </style> 
+</head>
+<body>
+    <div id="app" class="app app-default-container vertical-container default-background justify-content-space-evenly">
+        <h1 class="website-title">Ninja Turtles Cross</h1>
+        <div class="main-screen-menu default-menu-container">
+            <a href="../html/game.html" class="highlighted-button grid-column-1-3">Jugar</a>
+            <a href="../html/tutorial.html" class="highlighted-button grid-column-1-3">Tutorial</a>
+            <a href="../html/characters.html" class="highlighted-button">Personajes</a>
+            <a href="../html/shop.html" class="highlighted-button">Tienda</a>
+            <a href="../html/credits.html" class="highlighted-button grid-column-1-3">Créditos</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- INDEX.HTML NEW -->
+
+<!-- 
+    
+    DIV MENU PRINCIPAL (mainmenu.html)
+
+<div id="app" class="app vertical-container default-background justify-content-space-evenly">
+        <h1 class="website-title">Ninja Turtles Cross</h1>
+        <div class="main-screen-menu default-menu-container">
+            <a href="../html/game.html" class="highlighted-button grid-column-1-3">Jugar</a>
+            <a href="../html/tutorial.html" class="highlighted-button grid-column-1-3">Tutorial</a>
+            <a href="../html/personajes.html" class="highlighted-button">Personajes</a>
+            <a href="../html/shop.html" class="highlighted-button">Tienda</a>
+            <a href="../html/credits.html" class="highlighted-button grid-column-1-3">Créditos</a>
+        </div>
+    </div>
+
+
+DIV MENU JUGAR (game.html)
+
+<div id="app" class="app background-container">
+        <div id="foregroundContainer" class="foregroundContainer" style="background-color: #000000FF">
+
+        </div>
+        <div class="shadowContainer">
+            
+        </div>
+        <div class="elementsContainer borderShadow" id="elementsContainer">
+            <img src="../img/dona.gif" class="rana character position-absolute z-index-2" id="mainCharacter">
+            <img src="../img/april.gif" class="position-absolute" id="enemy">
+        </div>
+        <div id="levelInfoContainer" class="levelInfoContainer">
+            <h1 id="levelInfoName" style="filter:opacity(0%)"></h1>
+        </div>
+        <div id="pauseMenu" class="pauseMenu full-size-menu hidden-menu">
+            <div id="pauseMenuContainer" class="pauseMenuContainer default-menu-container vertical-menu">
+                <a class="highlighted-button">Continue</a>
+                <button class="highlighted-button">Settings</button>
+                <button class="highlighted-button">Characters</button>
+                <button class="highlighted-button">c</button>
+                <a class="highlighted-button" href="./mainmenu.html">Home</a>
+            </div>
+        </div>
+    </div>
+
+
+
+DIV MENU TUTORIAL (tutorial.html)
+
+<div id="app" class="app background-container">
+    <div id="foregroundContainer" class="foregroundContainer" style="background-color: #000000FF"></div>
+    <div class="shadowContainer"></div>
+    <div class="elementsContainer borderShadow" id="elementsContainer">
+      <img src="../img/dona.gif" class="rana character position-absolute" id="rana">
+    </div>
+    <div id="levelInfoContainer" class="levelInfoContainer">
+      <h1 id="levelInfoName" style="filter:opacity(0%)"></h1>
+    </div>
+    <div id="pauseMenu" class="pauseMenu full-size-menu hidden-menu">
+      <div id="pauseMenuContainer" class="pauseMenuContainer default-menu-container vertical-menu">
+        <a class="highlighted-button">Continue</a>
+        <button class="highlighted-button">Settings</button>
+        <button class="highlighted-button">Characters</button>
+        <button class="highlighted-button">c</button>
+        <a class="highlighted-button" href="./mainmenu.html">Home</a>
+      </div>
+
+    </div>
+
+    <div id="movementContainer">
+        <p>Controles basicos</p>
+        <ul>
+          <li>W:Subir</li>
+          <li>S:Bajar</li>
+          <li>A:Mover izquierda</li>
+          <li>D:Mover derecha</li>
+        </ul>
+      </div>
+      <img src="../img/tutorial1.gif" alt="" class="tortugasgif1" width="100px" onclick="cambiarImagen('../img/rafa')">
+      <img src="../img/tutorial2.gif" alt="" class="tortugasgif2" width="100px" onclick="cambiarImagen('../img/miguel')">
+      <img src="../img/tutorial3.gif" alt="" class="tortugasgif3" width="100px" onclick="cambiarImagen('../img/dona')">
+      <img src="../img/tutorial4.gif" alt="" class="tortugasgif4" width="100px" onclick="cambiarImagen('../img/leo')">
+  
+      <div id="movementContainer2">
+        <p id="text" class="typewriter"></p>
+        <img id="image" src="../img/tutorial.png" alt="" style="display:none;">
+      </div>
+  
+    </div>
+  
+    <script src="../js/tutorial.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/gameSceneTutorial.js"></script>
+
+DIV MENU PERSONAJES (personajes.html)
+
+<header class="header-personajes">
+      <img src="../img/Logo.png" class="foto-personajes" alt="Logo-personajes">
+      <h1>Tus Personajes</h1>
+  
+      <nav>
+        <ul class="navul-personajes">
+          <li class="navli-pesonajes"><a class="lia-personajes" href="../html/mainmenu.html">Inicio</a></li>
+          <li><a class="lia-personajes" href="../html/shop.html">Tienda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-personajes">
+      <section class="characters-personajes">
+        <div class="character-personajes">
+          <img src="../img/splinter.gif" alt="Personaje 1" class="splinter-img-personajes">
+          <div class="splinter-personajes">
+            <h3 class="h3-splinter-personajes">Splinter</h3>
+            <button class="buy-button1-personajes" data-price="5" data-name="Splinter"  onclick="cambiarprecio(event); mostrarMensaje();" id="Splinter">Seleccionar</button>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="character-personajes">
+          <img src="../img/leo.gif" alt="Personaje 2" class="leo-img-personajes">
+          <div class="leo-personajes">
+            <h3 class="h3-leonardo-personajes">Leonardo</h3>
+            <button class="buy-button2-personajes" data-price="10" data-name="Leonardo"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Leonardo">
+              Seleccionar 
+            </button>
+          </div>
+        </div>
+
+      
+        <div class="character-personajes">
+          <img src="../img/rafa.gif" alt="Personaje 3" class="rafaelo-img-personajes">
+          <div class="rafael-personajes">
+            <h3>Raphael</h3>
+            <button class="buy-button3-personajes" data-price="20" data-name="Raphael"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Raphael">Seleccionar</button>
+          </div>
+        </div>
+
+
+        <div class="character-personajes">
+          <img src="../img/miguel.gif" alt="Personaje 3" class="michelangelo-img-personajes">
+          <div class="michelangelo-personajes">
+            <h3>Michelangelo</h3>
+            <button class="buy-button4-personajes" data-price="20" data-name="Michelangelo"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Michelangelo">Seleccionar</button>
+          </div>
+        </div>
+
+
+
+        <div class="character-personajes">
+          <img src="../img/dona.gif" alt="Personaje 4" class="dona-img-personajes">
+          <div class="dona-personajes">
+            <h3 class="h3-dona-personajes">Donatello</h3>
+            <button class="buy-button5-personajes" data-price="10" data-name="Donatello"  onclick="cambiarprecio(event);mostrarMensaje();"
+              id="Leonardo">
+              Seleccionar 
+            </button>
+          </div>
+        </div>
+        
+    </main>
+    <div id="mensaje"></div>
+  <script src="../js/personaje.js"></script>
+  <img id="other-characters-button" class="hidden" src="../img/boton cancelar.png" onclick="location.reload()" style="cursor: pointer;">
+
+DIV MENU TIENDA (shop.html)
+
+<header class="header-tienda">
+    <div class="logo">
+      <img src="../img/Logo.png" class="logo" alt="Logo">
+    </div>
+    <div class="Dinero"><p> Saldo: <span id="saldo">100€</span></p></div>
+      <h1 class="titulo">Compra las tortugas</h1>
+    <nav>
+      <ul>
+        <li><a href="../html/mainmenu.html">Inicio</a></li>
+        <li><a href="../html/personajes.html">Personajes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="characters">
+      <div class="character">
+        <img src="../img/splinter.gif" alt="Personaje 1" class="splinter-img">
+        <div class="splinter">
+          <h3 class="h3-splinter-personajes">Splinter</h3>
+          <p class="p-splinter">5€</p>
+          <button class="buy-button1" data-price="5" data-name="Splinter" onclick="cambiarprecio(event)" id="Splinter">Comprar</button>
+        </div>
+      </div>
+      <div class="character">
+        <img src="../img/leo.gif" alt="Personaje 2" class="leo-img">
+        <h3 class="h3-leo-personajes">Leonardo</h3>
+        <p class="p-leo">10€</p>
+        <button class="buy-button2" data-price="10" data-name="Leonardo" onclick="cambiarprecio(event)" id="Leonardo">Comprar</button>
+      </div>
+      <div class="character">
+        <img src="../img/rafa.gif" alt="Personaje 3" class="rafaelo-img"> 
+        <div class="rafael">
+          <h3>Raphael</h3>
+          <p>20€</p>
+          <button class="buy-button3" data-price="20" data-name="Raphael" onclick="cambiarprecio(event)" id="Raphael">Comprar</button>
+        </div>
+      </div>
+      <div class="character">
+        <img src="../img/miguel.gif" alt="Personaje 3" class="michelangelo-img">
+        <div class="michelangelo">
+          <h3>Michelangelo</h3>
+          <p>30€</p>
+          <button class="buy-button4" data-price="20.00" data-name="Michelangelo" onclick="cambiarprecio(event)" id="Michelangelo">Comprar</button>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <script src="../js/shop.js"></script>
+
+DIV MENU CREDITOS (credits.html)
+
+		<h1>Creditos</h1>
+		<ul>
+			<li>Scrum:Ale</li>
+			<li>Programadores: Blas y Carlos</li>
+			<li>Cliente:Raul</li>
+			<li class="li1">Disenadores: Pumu y Rafa</li>
+			<li>Jefe de Equipo:Kevin</li>
+
+			< class="creditos">© 2023 PumuSL. No te me copies guarro.</p>
+
+ -->
+
+ 
