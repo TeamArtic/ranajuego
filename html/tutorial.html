@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title id="pageTitle">Rana saltarina</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tutorial.css">
+</head>
+
+<body>
+  <div id="app" class="app background-container">
+    <div id="foregroundContainer" class="foregroundContainer" style="background-color: #000000FF"></div>
+    <div class="shadowContainer"></div>
+    <div class="elementsContainer borderShadow" id="elementsContainer">
+      <img src="../img/dona.gif" class="rana character position-absolute" id="rana">
+    </div>
+    <div id="levelInfoContainer" class="levelInfoContainer">
+      <h1 id="levelInfoName" style="filter:opacity(0%)"></h1>
+    </div>
+    <div id="pauseMenu" class="pauseMenu full-size-menu hidden-menu">
+      <div id="pauseMenuContainer" class="pauseMenuContainer default-menu-container vertical-menu">
+        <a class="highlighted-button">Continue</a>
+        <button class="highlighted-button">Settings</button>
+        <button class="highlighted-button">Characters</button>
+        <button class="highlighted-button">c</button>
+        <a class="highlighted-button" href="./mainmenu.html">Home</a>
+      </div>
+
+    </div>
+    <div id="movementContainer3">
+    <!-- Contenedor de movimiento -->
+    <div id="movementContainer">
+      <p>Controles basicos</p>
+      <ul>
+        <li>W:Subir</li>
+        <li>S:Bajar</li>
+        <li>A:Mover izquierda</li>
+        <li>D:Mover derecha</li>
+      </ul>
+    </div>
+    <img src="../img/tutorial1.gif" alt="" class="tortugasgif1" width="100px" onclick="cambiarImagen('../img/rafa')">
+    <img src="../img/tutorial2.gif" alt="" class="tortugasgif2" width="100px" onclick="cambiarImagen('../img/miguel')">
+    <img src="../img/tutorial3.gif" alt="" class="tortugasgif3" width="100px" onclick="cambiarImagen('../img/dona')">
+    <img src="../img/tutorial4.gif" alt="" class="tortugasgif4" width="100px" onclick="cambiarImagen('../img/leo')">
+  </div>
+    <div id="movementContainer2">
+      <p id="text" class="typewriter"></p>
+      <img id="image" src="../img/tutorial.png" alt="" style="display:none;">
+    </div>
+
+  </div>
+
+  <script src="../js/tutorial.js"></script>
+  <script src="../js/engine.js"></script>
+  <script src="../js/gameSceneTutorial.js"></script>
+</body>
+
+</html>

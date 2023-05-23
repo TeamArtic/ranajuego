@@ -1,0 +1,63 @@
+@keyframes jump {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.2) translateY(-50px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+body{
+    cursor:url(https://cdn.custom-cursor.com/db/12602/32/cartoons-tmnt-raphael-and-sai-weapon-cursor.png) , default !important;
+}
+
+a{
+    cursor:url(https://cdn.custom-cursor.com/db/12601/32/cartoons-tmnt-raphael-and-sai-weapon-pointer.png) , pointer !important; 
+}
+
+button{
+    cursor:url(https://cdn.custom-cursor.com/db/12601/32/cartoons-tmnt-raphael-and-sai-weapon-pointer.png) , pointer !important; 
+  }
+
+.jump {
+    animation: jump 1s ease-out;
+}
+
+@font-face {
+    font-family: 'hola';
+    src: url(../BITWONDER.TTF);
+}
+
+h1 {
+    font-family: 'hola';
+    text-align: center;
+    top: 20px;
+    position: relative;
+    font-size: 50px;
+    color: white;
+}
+
+#rana {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+}
+
+
+.corazones{
+    height: 100px;
+}
+
+.vidas{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: white;
+    font-size: 30px;
+    font-family: 'hola';
+}

@@ -1,0 +1,476 @@
+header {
+  background-color: #289234;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+body{
+  cursor:url(https://cdn.custom-cursor.com/db/12602/32/cartoons-tmnt-raphael-and-sai-weapon-cursor.png) , default !important;
+}
+
+a{
+  cursor:url(https://cdn.custom-cursor.com/db/12601/32/cartoons-tmnt-raphael-and-sai-weapon-pointer.png) , pointer !important; 
+}
+
+button{
+  cursor:url(https://cdn.custom-cursor.com/db/12601/32/cartoons-tmnt-raphael-and-sai-weapon-pointer.png) , pointer !important; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  /* background-image: url(../img/dona.jpg); */
+  font-family: 'hola';
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li a{
+  font-size: 20px;
+}
+
+li a:hover{
+  color: yellow;
+}
+
+h1{
+  text-align: center;
+  position: relative;
+  left: 100px;
+}
+.h3-leonardo {
+  position: relative;
+  top: 5px;
+
+}
+
+.h3-dona {
+  position: relative;
+  top: 22px;
+}
+
+.foto {
+  height: 80px;
+}
+
+@font-face {
+  font-family: 'hola';
+  src: url(../BITWONDER.TTF);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+/* nav li {
+  margin-right: 20px;
+} */
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  font-family: 'hola';
+}
+
+header {
+  background-color: #289234;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+/* 
+nav li {
+  margin-right: 20px;
+} */
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  margin: 20px;
+}
+
+.characters {
+  flex-grow: 1;
+}
+
+.characters h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #d7e9d9;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color:  #00000050 ;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #289234;
+  width: 300px;
+
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.character h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #fffdfd;
+}
+
+.character p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #289234;
+}
+
+.buy-button {
+  background-color: #289234;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #000;
+  color: #289234;
+  box-shadow: 0px 0px 5px #289234;
+}
+
+.h2 {
+  margin-right: 160px;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: 'hola';
+  src: url(../BITWONDER.TTF);
+}
+
+.cart-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.splinter {
+  position: relative;
+  top: 92px;
+  text-align: center;
+}
+.h3-splinter {
+  position: relative;
+  top: -1px;
+  text-align: center;
+}
+.michelangelo {
+  position: relative;
+  top: 90px;
+  text-align: center;
+
+}
+
+.rafael {
+  position: relative;
+  top: 65px;
+  text-align: center;
+}
+
+.splinter-img {
+  width: 100%;
+  top: 100px;
+  position: relative;
+}
+
+.rafaelo-img {
+  position: relative;
+  top: 70px;
+  width: 200px;
+}
+
+.michelangelo-img {
+  position: relative;
+  top: 95px;
+  width: 200px;
+}
+
+.leo-img {
+  position: relative;
+  top: 5px;
+  width: 200px;
+}
+
+.dona-img {
+  position: relative;
+  top: 27px;
+  width: 200px;
+}
+
+.carrito {
+  cursor: pointer;
+}
+
+.cart-container {
+  display: none;
+}
+
+.cart-container.show {
+  display: block;
+}
+
+.mensaje-compra {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.compra-realizada {
+  position: fixed;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #289234;
+  ;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  font-size: 24px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20px;
+  border: 4px solid #154734;
+}
+
+.compra-realizada.mostrar {
+  opacity: 1;
+}
+
+.Dinero {
+  margin-right: 200px;
+}
+
+.buy-button1 {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid #1d4e00;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #289234;
+  transition: transform 0.3s cubic-bezier(.18, .89, .32, 1.28);
+  margin-right: 60px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 4px solid #154734;
+  position: relative;
+  left: 20px;
+}
+
+
+.buy-button1:hover {
+  background-color: #000;
+  color: #289234;
+  text-shadow: 2px 2px #fff;
+  transform: scale(1.1);
+}
+
+.buy-button2 {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid #1d4e00;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #289234;
+  transition: transform 0.3s cubic-bezier(.18, .89, .32, 1.28);
+  border-radius: 20px;
+  border: 4px solid #154734;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.buy-button2:hover {
+  background-color: #000;
+  color: #289234;
+  text-shadow: 2px 2px #fff;
+  transform: scale(1.1);
+}
+
+.buy-button3 {
+  display: block;
+  width: 140%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 4px solid #154734;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #289234;
+  transition: transform 0.3s cubic-bezier(.18, .89, .32, 1.28);
+  margin-right: 60px;
+  margin-top: 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 15px;
+}
+
+.buy-button3:hover {
+  background-color: #000;
+  color: #289234;
+  text-shadow: 2px 2px #fff;
+  transform: scale(1.1);
+}
+
+
+.buy-button4 {
+  display: block;
+  width: 110%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid #1d4e00;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #289234;
+  transition: transform 0.3s cubic-bezier(.18, .89, .32, 1.28);
+  margin-right: 60px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 4px solid #154734;
+  position: relative;
+  left: 13px;
+}
+
+.buy-button4:hover {
+  background-color: #000;
+  color: #289234;
+  text-shadow: 2px 2px #fff;
+  transform: scale(1.1);
+}
+
+.buy-button5 {
+  display: block;
+  width: 110%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid #1d4e00;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #289234;
+  transition: transform 0.3s cubic-bezier(.18, .89, .32, 1.28);
+  margin-right: 60px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 4px solid #154734;
+  position: relative;
+  top: 17px;
+  left: 10px;
+}
+
+.buy-button5:hover {
+  background-color: #000;
+  color: #289234;
+  text-shadow: 2px 2px #fff;
+  transform: scale(1.1);
+}
+.character.grayed-out {
+  filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.hidden {
+  display: none;
+  
+}
+#other-characters-button{
+  top: 93%;
+  left: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #289234;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  font-size: 24px;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20px;
+  border: 4px solid #154734;
+  margin-top: 20px;
+}
+

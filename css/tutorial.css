@@ -1,0 +1,126 @@
+#movementContainer {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+  }
+  #movementContainer3 {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 712px;
+    width: 300px;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+  }
+
+  #movementContainer2 {
+    position: absolute;
+    top: 44px;
+    right: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 712px;
+    width: 300px;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+  }
+
+  .typewriter>p {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(20, end) forwards;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  #image {
+    opacity: 0;
+    animation: show-image 1s forwards;
+    animation-delay: 2s;
+  }
+
+  @keyframes show-image {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+  .tortugasgif1 {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    background-color: white;
+
+  }
+
+  .tortugasgif2 {
+    position: absolute;
+    top: 200px;
+    left: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    background-color: white;
+  }
+
+  .tortugasgif3 {
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    background-color: white;
+  }
+
+  .tortugasgif4 {
+    position: absolute;
+    top: 430px;
+    left: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    background-color: white;
+  }
+
+  .tortugasgif1:hover,
+  .tortugasgif2:hover,
+  .tortugasgif3:hover,
+  .tortugasgif4:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+  }

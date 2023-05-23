@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Creditos</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/credits.css">
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: "hola";
+			text-align: center;
+			background-image: url("../img/naranjito.jpg");
+		}
+
+		.container {
+			display: inline-block;
+			margin: 20px;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			text-align: center; 
+		}
+
+		.container.visible {
+			opacity: 1;
+		}
+
+		.name {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+		
+		.p {
+			font-size: 30px;
+		}
+		
+		.name {
+			font-size: 20px; 
+		}
+		
+		h1 {
+			font-family: "hola";
+			font-size: 60px;
+		}
+		
+		@font-face {
+			font-family: 'hola';
+			src: url(../BITWONDER.TTF);
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="fade-in">Creditos</h1>
+	<div class="container fade-in" style="transition-delay: 1s;">
+		<p class="p">Scrum Master</p>
+		<div class="name">Ale Martinez</div>
+	</div>
+	<div class="container fade-in" style="transition-delay: 2s;">
+		<p class="p">Programador Senior</p>
+		<div class="name">Kevin Rodriguez</div>
+	</div>
+	<div class="container fade-in" style="transition-delay: 3s;">
+		<p class="p">Costumer Journey</p>
+		<div class="name">Raul Lopez</div>
+	</div>
+	<div class="container fade-in" style="transition-delay: 4s;">
+		<p class="p">Estilos y Graficos</p>
+		<div class="name">Manuel Mendias</div>
+		<div class="name">Rafa Higueras</div>
+	</div>
+	<div class="container fade-in" style="transition-delay: 5s;">
+		<p class="p">Programadores Junior</p>
+		<div class="name">Blas Escalona</div>
+		<div class="name">Carlos Perez</div>
+	</div>
+
+
+	<script>
+		const containers = document.querySelectorAll('.container');
+
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		});
+
+		containers.forEach(container => {
+			observer.observe(container);
+		});
+	</script>
+</body>
+
+</html>
